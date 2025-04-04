@@ -50,10 +50,12 @@ body {
   align-items: center;
   background-color: white;
   padding: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
+
 }
 
 .logo {
-  height: 80px;
+  height: 65px;
   width: auto; 
 }
 
