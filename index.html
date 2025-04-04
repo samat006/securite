@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentification CAS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="top-header">
+        <a href="https://www.universita.corsica" class="university-name">Università di Corsica</a>
+        <span>|</span>
+        <div class="menu">
+          <a href="https://studia.universita.corsica">Étudiants</a>
+          <a href="https://portail.universita.corsica">Personnels</a>
+          <a href="https://ricerca.universita.corsica">Recherche</a>
+          <a href="https://pro.universita.corsica">Partenaires pro</a>
+          <a href="https://fundazione.universita.corsica">Fondation</a>
+        </div>
+      </div>
+
+      <div class="bottom-header">
+        <a href="https://portail.universita.corsica/">
+          <img src="https://portail.universita.corsica/template/template_back_office/images/logo.png" alt="logo" class="logo">
+        </a>
+        <div class="baseline">
+          <span class="auth-title">Authentification</span> | Campus numérique
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1 class="welcome-title">Bienvenue au programme d'échange Canada-Corse</h1>
+      <h2 class="eligibility-text">Veuillez entrer vos identifiants étudiants pour vérifier votre éligibilité</h2>
+
+      <div class="login-card">
+        <h2 class="login-title">Connexion</h2>
+
+        <form class="login-form" id="loginForm">
+          <label for="username">Identifiant :</label>
+          <input type="text" id="username" placeholder="Votre numéro étudiant">
+
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" placeholder="Votre mot de passe">
+
+          <button type="submit">Se connecter</button>
+        </form>
+
+        <div class="forgot-password">
+          <a href="#">Mot de passe oublié ?</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © 2025 Università di Corsica
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
