@@ -20,7 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 btn.addEventListener("click", (e) => {
   e.preventDefault(); // Empêche la soumission réelle
 
-  fetch("http://localhost:3000/clicks", {
+  fetch("https://securite-rcdz.onrender.com/clicks", {
     method: "POST"
   })
     .then(res => res.json())
