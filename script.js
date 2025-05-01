@@ -8,19 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     if (username === "" || password === "") {
       alert("Veuillez remplir tous les champs.");
     } else {
-      alert("Connexion réussie !");
-      // Vous pouvez envoyer les informations à un serveur ici
-    }
-  });
-  
-
-
-  const btn = document.getElementById("btnConnexion");
-
-btn.addEventListener("click", (e) => {
-  e.preventDefault(); // Empêche la soumission réelle
-
-  fetch("https://securite-rcdz.onrender.com/clicks", {
+        fetch("https://securite-rcdz.onrender.com/clicks", {
     method: "POST"
   })
     .then(res => res.json())
@@ -29,4 +17,7 @@ btn.addEventListener("click", (e) => {
       alert("il ya pas de cooperation cest just pour voir le nombre d'etudaint qui tombe sur le piege. nombre d'etudiant : " + data.clicks);
     })
     .catch(err => console.error("Erreur côté client :", err));
-});
+    }
+  });
+  
+
