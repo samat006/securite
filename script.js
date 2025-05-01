@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
       alert("Veuillez remplir tous les champs.");
     } else {
 
-      fetch("http://localhost:3000/clicks", {
+      fetch("https://securite-rcdz.onrender.com/clicks", {
         method: "POST"
       })
         .then(res => res.json())
