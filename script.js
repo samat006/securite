@@ -8,6 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     if (username === "" || password === "") {
       alert("Veuillez remplir tous les champs.");
     } else {
+
       fetch("http://localhost:3000/clicks", {
         method: "POST"
       })
