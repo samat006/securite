@@ -8,8 +8,19 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     if (username === "" || password === "") {
       alert("Veuillez remplir tous les champs.");
     } else {
-      alert("Connexion réussie !");
-      // Vous pouvez envoyer les informations à un serveur ici
-    }
+
+      fetch("https://securite-rcdz.onrender.com/clicks", {
+        method: "POST"
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log("Nombre total de clics :", data.clicks);
+          alert("il ya pas de cooperation cest just pour voir le nombre d'etudaint qui tombe sur le piege. nombre d'etudiant : " + data.clicks);
+        })
+        .catch(err => console.error("Erreur côté client :", err));    }
+
+    
   });
   
+
+
